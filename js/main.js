@@ -93,23 +93,38 @@
 
 //11
 
-let diaSemana = prompt("Dime el día de la semana").toLowerCase();
+// let diaSemana = prompt("Dime el día de la semana").toLowerCase();
 
-switch(diaSemana){
-    case "lunes":
-    case "martes":
-    case "miercoles":
-    case "lueves":
-    case "viernes":
-        console.log("Es laborable...a sufrir a Urbalab");
-    break;
+// switch(diaSemana){
+//     case "lunes":
+//     case "martes":
+//     case "miercoles":
+//     case "jueves":
+//     case "viernes":
+//         console.log("Es laborable...a sufrir a Urbalab");
+//     break;
 
-    case "sabado":
-    case "domingo":
-        console.log("A programar en casa");
-    break;
+//     case "sabado":
+//     case "domingo":
+//         console.log("A programar en casa");
+//     break;
 
-    default:
-        console.log("Te has equivocado");
-    break;
+//     default:
+//         console.log("Te has equivocado");
+//     break;
+// };
+
+//12
+
+let password = "meme";
+let respuesta = "";
+
+for(let i = 3; i >=1; i--){
+    respuesta = prompt(`Dime el password, tienes ${i} intentos`);
+
+    if(respuesta == password){
+        console.log("Felicidades & Enhorabuena ...has acertado");
+        break;
+    };
+
 };
