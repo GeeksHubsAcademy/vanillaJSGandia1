@@ -116,15 +116,66 @@
 
 //12
 
-let password = "meme";
-let respuesta = "";
+// let password = "meme";
+// let respuesta = "";
 
-for(let i = 3; i >=1; i--){
-    respuesta = prompt(`Dime el password, tienes ${i} intentos`);
+// for(let i = 3; i >=1; i--){
+//     respuesta = prompt(`Dime el password, tienes ${i} intentos`);
 
-    if(respuesta == password){
-        console.log("Felicidades & Enhorabuena ...has acertado");
+//     if(respuesta == password){
+//         console.log("Felicidades & Enhorabuena ...has acertado");
+//         break;
+//     };
+
+// };
+
+//13
+
+let primerNumero = parseInt(prompt("Soy el primer número"));
+
+let segundoNumero = parseInt(prompt("Soy el segundo número"));
+
+let operando = prompt("Dime la operación a realizar").toLowerCase();
+
+switch (operando) {
+    case "+":
+    case "sumar":
+        console.log(primerNumero + segundoNumero);
         break;
-    };
 
-};
+    case "-":
+    case "restar":
+        console.log(primerNumero - segundoNumero);
+
+        break;
+
+    case "*":
+    case "multiplicar":
+        console.log(primerNumero * segundoNumero);
+
+        break;
+
+    case "/":
+    case "dividir":
+        console.log(primerNumero / segundoNumero);
+
+        break;
+
+    case "%":
+    case "modulo":
+    case "resto":
+        console.log(primerNumero % segundoNumero);
+
+        break;
+
+    case "**":
+    case "elevar":
+        console.log(primerNumero ** segundoNumero);
+
+        break;
+
+    default:
+        console.log("Que demonios dices???");
+        break;
+}
+
